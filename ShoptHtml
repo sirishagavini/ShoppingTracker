@@ -1,0 +1,116 @@
+<%-- 
+    Document   : yhhtml
+    Created on : Jan 21, 2016, 9:41:05 PM
+    Author     : Sirisha
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <script language="javascript" type="text/javascript">
+        //validating the fields
+function validate()
+{
+	
+	var z=document.forms["registration"]["Employee_ID"].value;
+	var a=z.length;
+	if(a<1)
+	{
+	alert("Enter atleast 1 character in Employee_id");
+	return false;
+	}
+    }
+
+
+
+</script>
+
+
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+           
+           <title >Shopping Tracker</title>
+    </head>
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <div style=" background-color:pink; color: #da197d; padding:5px; "> <table> <tr> <td> <img src="imageresource/shop_1.jpg" height="120" width="170" > </td> <td style="font: 700 100px/0.0005 'Great Vibes', Helvetica, sans-serif; font-size: 50px"><p> <font  size="10"> &nbsp; &nbsp;&nbsp; &nbsp; <b> Shopping Tracker </p> </td> <td style="font: 700 100px/0.0005 'Great Vibes', Helvetica, sans-serif; font-size: 50px;"> <p> <font size="6"> &nbsp; &nbsp; <b> Contact us: (123)456-8907 &nbsp; &nbsp; <b> email: shop@track.com </tr>
+        </table> </div>
+    <body  background="imageresource/girlshop.jpg" style="background-size: 100%;">  
+        <table> <tr> <td style="width: fit-content;"> <table align="center">
+         <tr> 
+&nbsp; &nbsp;<td> <div style=" width: fit-content; height: 60px; background-color:#da197d; color: white;  padding:10px; text-align:center; width: 500px; text-decoration:none; font-family: cursive">   <b> Home Page </b> </a> </div> </td>
+</tr> <tr><td> <div style=" height: 60px; background-color:#da197d; color: white; padding:10px; text-align:center;  width: 500px; text-decoration:none; font-family: cursive">   <b>  Home&Living </b> </a> </div> </td>
+</tr> <tr> &nbsp; &nbsp;<td> <div style="  height: 60px; background-color:#da197d; color: white; padding:10px;  width: 500px;text-align:center; text-decoration:none;  font-family: cursive">   <b> Grocery</b> </a> </div> </td>
+</tr> <tr><td> <div style="  height: 60px; background-color: #da197d; color: white; padding:10px;  width: 500px; text-align:center; text-decoration:none;  font-family: cursive">  <b> Health </b> </a> </div> </td>
+</tr>
+</table>
+                </td> 
+<td background="imageresource/hotpinkframe.png" style="background-size: 100%;">
+    
+     <br>   
+        <form method="post" action="yhjsp1.jsp" name="registration" onsubmit="return validate()">
+            <center> 
+            <table  border-color="pink" width="70%" align="center" cellpadding="3">
+                
+                <thead>
+                    <tr>
+                        <th style="color: #da197d" colspan="2">Personal Shopping Expenses </th>
+                    </tr>
+                </thead> <br> 
+                <tbody>
+                    <%-- creating fields for the attributes of GasReceipt --%>
+                    <tr>
+                        <td style="color: #da197d"> <b> Total Affordable Budget</td>
+                        <td ><input  type="text" name="Affordable Budget" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #da197d"> <b> Clothes Budget </td>
+                        <td><input style="text-decoration-color: palevioletred" type="text" name="Clothes Budget" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #da197d"> <b> MakeUp Budget </td>
+                        <td><input style="text-decoration-color: palevioletred" type="text" name="MakeUp Budget" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #da197d">  <b> Scarves Budget </td>
+                        <td><input style="text-decoration-color: palevioletred" type="text" name="Scarf Budget" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #da197d">  <b> Watches Budget</td>
+                        <td><input style="text-decoration-color: palevioletred" type="text" name="Watches Budget" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #da197d">  <b> Shoes Budget </td>
+                        <td><input type="text" name="Shoes Budget" value="" /></td>
+                    </tr>
+                   
+                    <tr>
+                        <td style="color: #da197d">  <b> Accessories Budget </td>
+    <td><input type="text" name="Accessories Budget" value="" /></td>
+
+                    </tr>
+                  
+                    <tr>
+                        <td style="color: #da197d">  <b> Picture_of_Receipt for future Reference </td>
+                      
+                      <td style="color: #da197d">                         
+  Select a file: <input type="file" name="Picture_of_Receipt for future Reference">
+
+ </td>
+                    </tr>                 
+                    
+                    <%--creating submit buttons for submitting the  entered details --%>
+                    <tr>
+                        <td style="color: #F50057"><input type="submit" value="Check" /></td>
+                        <td style="color: #F50057"><input type="reset" value="Reset" /></td>
+                    </tr>
+                   
+                </tbody>
+            
+            </table> </td> </tr> </table>
+            </center>
+        </form>
+                    <br> 
+                    <div style="font: 700 100px/0.0005 'Great Vibes', Helvetica, sans-serif; font-size: 50px;">  <font size="5"> <h3 style=" background-color: black; text-align: center; color: black"> Please contact Dr. Juho if you think you have Obsessive Shopping Disorder ;) </h3>
+                 </div> </body>
+</html>
